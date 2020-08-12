@@ -405,7 +405,8 @@ class Item extends Component {
     const newLabel = [];
     const labelStyle = StyleSheet.flatten([
       { fontSize: 15, lineHeight: 30 },
-      labelProps.style
+      labelProps.style,
+      labelProps.floatStyle,
     ]);
     if (this.props.floatingLabel) {
       if (this.state.isFocused) {
