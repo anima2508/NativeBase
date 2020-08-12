@@ -138,7 +138,7 @@ class Button extends Component {
           this.props.transparent
             ? TouchableNativeFeedback.Ripple('transparent')
             : TouchableNativeFeedback.Ripple(
-                variables.androidRippleColor,
+                this.props.androidRippleColor || variables.androidRippleColor,
                 false
               )
         }
